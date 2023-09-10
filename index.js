@@ -21,7 +21,17 @@ const greetings = (name) => {
 
 greetings("Adi");
 
-const { add, sub } = require("./calculator");
-const { add, sub } = calculator;
-console.log(add(9, 9));
-console.log(sub(9, 9));
+// const { add, sub } = require("./calculator");
+// const { add, sub } = calculator;
+// console.log(add(9, 9));
+// console.log(sub(9, 9));
+
+
+const path = require('path');
+const filePath = path.join("users", "adi", "notes.txt", "lakshmi");
+
+console.log(filePath);
+
+const addDays = require("date-fns/addDays");
+const res = addDays(new Date(2021, 1, 20), 3);
+console.log(res);
